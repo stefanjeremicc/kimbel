@@ -17,12 +17,16 @@ module.exports = {
       },
       colors: {
         "w-primary": "#4326c4",
-        "w-secondary": "#ffe01b",
+        "w-secondary": "#e0402f",
         "w-tertiary": "#1B242C",
         "w-gray": "#f3f2f1",
+        "w-gray-light": "#f8f9fa",
         "w-gray-border": '#D5D1DF',
         "w-gray-border-dark": '#717171',
-        "w-primary-text": "#1B242C"
+        "w-primary-text": "#1B242C",
+        "w-gray-1": "#eff2f4",
+        "w-gray-2": "#e7ebee",
+        "w-gray-3": "#e7ebee",
       },
     },
     container: {

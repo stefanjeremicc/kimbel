@@ -58,9 +58,9 @@ const categories = reactive([
           </div>
 
           <div class="flex items-center w-fit mr-16">
-            <img class="w-7 mr-8" src="@/images/icons/profile.svg" alt="" />
-            <img class="w-7 mr-8" src="@/images/icons/like.svg" alt="" />
-            <img class="w-7" src="@/images/icons/save.svg" alt="" />
+            <img class="w-6 mr-8" src="@/images/icons/profile.svg" alt="" />
+            <img class="w-6 mr-8" src="@/images/icons/like.svg" alt="" />
+            <img class="w-6" src="@/images/icons/save.svg" alt="" />
           </div>
 
           <Link
