@@ -6,9 +6,11 @@ import Header from "../../Components/Header.vue";
 <template>
   <Header></Header>
 
-  <div class="bg-w-gray rounded-br-[10rem] p-32">
+  <div
+    class="bg-[url('@/images/icons/strelica.svg')] bg-no-repeat bg-contain bg-w-gray rounded-br-[10rem] p-32"
+  >
     <div class="container">
-      <div class="bg-white flex rounded-3xl py-12 px-32 pr-0">
+      <div class="flex rounded-3xl py-12 px-32 pr-0">
         <div class="flex-1 flex flex-col justify-center">
           <div class="w-fit">
             <h4 class="relative font-prompt-medium text-[2.5rem] leading-normal mb-7">
@@ -24,8 +26,17 @@ import Header from "../../Components/Header.vue";
           </div>
         </div>
 
-        <div class="flex-1">
-          <img src="@/images/hero/hero.svg" alt="" />
+        <div
+          class="flex items-center justify-center rounded-s-[1.5rem] rounded-e-[1.5rem] h-[470px] flex-1"
+          style="
+            background: linear-gradient(
+              180deg,
+              hsla(40, 5%, 78%, 0.44) 15.62%,
+              hsla(0, 0%, 100%, 0)
+            );
+          "
+        >
+          <img src="@/images/devojka.webp" alt="" />
         </div>
       </div>
     </div>
