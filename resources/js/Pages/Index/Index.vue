@@ -6,9 +6,7 @@ import Header from "../../Components/Header.vue";
 <template>
   <Header></Header>
 
-  <div
-    class="bg-[url('@/images/icons/strelica.svg')] bg-no-repeat bg-contain bg-w-gray rounded-br-[10rem] p-32"
-  >
+  <div class="bg-no-repeat bg-contain bg-w-gray rounded-br-[10rem] p-32">
     <div class="container">
       <div class="flex rounded-3xl py-12 px-32 pr-0">
         <div class="flex-1 flex flex-col justify-center">
@@ -653,6 +651,43 @@ import Header from "../../Components/Header.vue";
       </div>
     </div>
   </div>
+
+  <div class="relative h-[800px]">
+    <div class="background-video">
+      <video autoplay loop muted>
+        <source
+          src="https://cdn.shopify.com/videos/c/o/v/ad2ece991bf440ffa93fe71b5b95c853.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+      <p class="text-white mb-5 text-3xl text-center">
+        Postanite i vi deo najveće baze u Srbiji!
+      </p>
+      <h5 class="text-8xl text-white font-prompt-bold text-center">Kimbel TEAM</h5>
+    </div>
+
+    <div class="absolute left-0 top-0 right-0 bottom-0 bg-black bg-opacity-20"></div>
+  </div>
+
+  <div class="bg-w-gray-light h-[600px]"></div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
