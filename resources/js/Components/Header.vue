@@ -57,14 +57,14 @@ const categories = reactive([
             </form>
           </div>
 
-          <div class="flex items-center w-fit mr-16">
+          <div class="flex items-center w-fit">
             <img class="w-6 mr-8" src="@/images/icons/profile.svg" alt="" />
             <img class="w-6 mr-8" src="@/images/icons/like.svg" alt="" />
             <img class="w-6" src="@/images/icons/save.svg" alt="" />
           </div>
 
           <Link
-            class="flex items-center justify-center border border-w-primary text-w-primary font-prompt-medium rounded-3xl px-8"
+            class="flex items-center justify-center border border-w-primary text-w-primary font-prompt-medium rounded-3xl px-8 hidden"
             href="/"
             >Postani prodavac</Link
           >

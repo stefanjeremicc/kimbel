@@ -7,17 +7,45 @@ import Header from "../../Components/Header.vue";
   <Header></Header>
 
   <div class="bg-no-repeat bg-contain bg-w-gray rounded-br-[10rem] p-32">
-    <div class="container">
-      <div class="flex rounded-3xl py-12 px-32 pr-0">
+    <div class="container mx-auto">
+      <div class="flex rounded-3xl py-12">
         <div class="flex-1 flex flex-col justify-center">
-          <div class="w-fit">
-            <h4 class="relative font-prompt-medium text-[2.5rem] leading-normal mb-7">
-              <span> Da li si spreman da <br /></span> raščistiš svoj
-              <span class="text-w-secondary">ormar</span>?
+          <div class="w-[700px]">
+            <h4
+              class="relative font-prompt-medium text-7xl leading-tight mb-10 uppercase"
+            >
+              <p class="font-prompt-bold flex">
+                <span class="ml-20 inline-block">VAŠA</span>
+                <span class="ml-7 mt-11 inline-block">MODNA</span>
+              </p>
+              <p class="font-prompt-bold">VIRTUELNA</p>
+
+              <div class="relative w-100">
+                <span class="absolute -bottom-0 left-10">
+                  <svg
+                    class="icon icon-right-arrow rotate-90"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="84"
+                    height="42.208"
+                    viewBox="0 0 84 42.208"
+                  >
+                    <g transform="translate(0 -127.369)">
+                      <g transform="translate(0 127.369)">
+                        <path
+                          d="M83.445,147.127h0l-19.09-19.091a1.909,1.909,0,1,0-2.692,2.692l15.826,15.845H1.909a1.909,1.909,0,0,0,0,3.818h75.58L61.663,166.218a1.909,1.909,0,1,0,2.692,2.692l19.091-19.091A1.909,1.909,0,0,0,83.445,147.127Z"
+                          transform="translate(0 -127.369)"
+                          fill="#1b242c"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <p class="font-prompt-bold ml-auto text-right mr-20">VITRINA MODE</p>
+              </div>
             </h4>
 
             <Link
-              class="w-fit flex items-center justify-center border border-w-primary bg-w-primary text-white font-prompt-medium rounded-3xl px-8 py-3"
+              class="w-fit flex items-center justify-center border border-w-primary bg-w-primary text-white font-prompt-medium rounded-3xl px-8 py-3 hidden"
               href="/"
               >Postani prodavac</Link
             >
@@ -198,14 +226,16 @@ import Header from "../../Components/Header.vue";
     <div class="bg-w-gray-1 p-32 rounded-tr-[10rem]">
       <div class="container">
         <div class="flex justify-between items-center mb-24">
-          <h4 class="text-5xl text-w-tertiary font-prompt-bold">Top influenseri</h4>
+          <h4 class="text-5xl text-white font-prompt-bold">Top influenseri</h4>
 
-          <span class="text-xl font-prompt-medium">Pogledaj sve influensere</span>
+          <span class="text-xl text-white font-prompt-medium"
+            >Pogledaj sve influensere</span
+          >
         </div>
 
         <div class="flex items-center gap-8">
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="mb-3" src="@/images/korisnik.jpg" alt="" />
 
@@ -215,7 +245,7 @@ import Header from "../../Components/Header.vue";
           </div>
 
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="mb-3" src="@/images/korisnik.jpg" alt="" />
 
@@ -225,7 +255,7 @@ import Header from "../../Components/Header.vue";
           </div>
 
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="mb-3" src="@/images/korisnik.jpg" alt="" />
 
@@ -235,7 +265,7 @@ import Header from "../../Components/Header.vue";
           </div>
 
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="mb-3" src="@/images/korisnik.jpg" alt="" />
 
@@ -245,7 +275,7 @@ import Header from "../../Components/Header.vue";
           </div>
 
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="mb-3" src="@/images/korisnik.jpg" alt="" />
 
@@ -255,7 +285,7 @@ import Header from "../../Components/Header.vue";
           </div>
 
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="mb-3" src="@/images/korisnik.jpg" alt="" />
 
@@ -426,14 +456,14 @@ import Header from "../../Components/Header.vue";
     <div class="bg-w-gray-1 p-32 rounded-tr-[10rem]">
       <div class="container">
         <div class="flex justify-between items-center mb-24">
-          <h4 class="text-5xl text-w-tertiary font-prompt-bold">Kupuj po brendu</h4>
+          <h4 class="text-5xl text-white font-prompt-bold">Kupuj po brendu</h4>
 
-          <span class="text-xl font-prompt-medium">Pogledaj sve brendove</span>
+          <span class="text-xl text-white font-prompt-medium">Pogledaj sve brendove</span>
         </div>
 
         <div class="flex items-center gap-8">
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="w-12 mb-3" src="@/images/icons/nike.svg" alt="" />
 
@@ -443,7 +473,7 @@ import Header from "../../Components/Header.vue";
           </div>
 
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="w-12 mb-3" src="@/images/icons/nike.svg" alt="" />
 
@@ -453,7 +483,7 @@ import Header from "../../Components/Header.vue";
           </div>
 
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="w-12 mb-3" src="@/images/icons/nike.svg" alt="" />
 
@@ -463,7 +493,7 @@ import Header from "../../Components/Header.vue";
           </div>
 
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="w-12 mb-3" src="@/images/icons/nike.svg" alt="" />
 
@@ -473,7 +503,7 @@ import Header from "../../Components/Header.vue";
           </div>
 
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="w-12 mb-3" src="@/images/icons/nike.svg" alt="" />
 
@@ -483,7 +513,7 @@ import Header from "../../Components/Header.vue";
           </div>
 
           <div
-            class="flex-grow flex flex-col items-center justify-center p-4 bg-white rounded"
+            class="flex-grow flex flex-col items-center justify-center p-4 bg-w-white-opacity-2 text-white rounded"
           >
             <img class="w-12 mb-3" src="@/images/icons/nike.svg" alt="" />
 
@@ -496,7 +526,7 @@ import Header from "../../Components/Header.vue";
     </div>
   </div>
 
-  <div class="bg-w-gray">
+  <div class="bg-w-gray-1">
     <div class="bg-white p-32 rounded-tl-[10rem]">
       <div class="container">
         <div class="flex justify-between items-center mb-24">
@@ -669,10 +699,41 @@ import Header from "../../Components/Header.vue";
       <h5 class="text-8xl text-white font-prompt-bold text-center">Kimbel TEAM</h5>
     </div>
 
-    <div class="absolute left-0 top-0 right-0 bottom-0 bg-black bg-opacity-20"></div>
+    <div class="absolute left-0 top-0 right-0 bottom-0 bg-black bg-opacity-40"></div>
   </div>
 
-  <div class="bg-w-gray-light h-[600px]"></div>
+  <div class="p-32">
+    <div class="container">
+      <div class="flex justify-between items-center mb-24">
+        <h4 class="text-5xl text-w-tertiary font-prompt-bold">Žene su sada u trendu</h4>
+
+        <span class="text-xl font-prompt-medium">Pogledaj celu ponudu</span>
+      </div>
+
+      <div class="grid grid-cols-3 gap-8">
+        <div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/1368/3463/files/WSG_2306_Summer-Campaign---38_20_281_29_450x_crop_center@2x.progressive.jpeg?v=1684514918"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/1368/3463/files/Shortstache_E2_84_A2_Cuts_NewYork_FullRes-540_450x_crop_center@2x.progressive.jpg?v=1680481504"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/1368/3463/files/Aeroflight1204_20copy_450x_crop_center@2x.progressive.jpg?v=1680480787"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>

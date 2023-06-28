@@ -24,9 +24,11 @@ module.exports = {
         "w-gray-border": '#D5D1DF',
         "w-gray-border-dark": '#717171',
         "w-primary-text": "#1B242C",
-        "w-gray-1": "#eff2f4",
+        "w-gray-1": "#1a191e",
+        "w-gray-1-old": "#eff2f4",
         "w-gray-2": "#e7ebee",
         "w-gray-3": "#e7ebee",
+        "w-white-opacity-2": "rgba(255,255,255,.1)"
       },
     },
     container: {
