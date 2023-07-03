@@ -59,12 +59,18 @@ import { Link } from "@inertiajs/vue3";
 
   <div class="bg-w-gray-1 rounded-t-[6rem] p-6">
     <div class="container">
-      <div class="flex items-between">
+      <div class="flex items-center justify-between">
         <div class="inline-block">
           <img
             src="https://assets.website-files.com/637614467ad6ef67f0af2c24/637ded1cd93444319c6845cc_logo2.svg"
             alt=""
           />
+        </div>
+
+        <div class="flex gap-8">
+          <p class="font-prompt-regular text-white">Politika privatnosti</p>
+          <p class="font-prompt-regular text-white">Kolačići</p>
+          <p class="font-prompt-regular text-white">Dokumentacija</p>
         </div>
       </div>
     </div>

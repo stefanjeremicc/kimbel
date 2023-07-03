@@ -21,7 +21,7 @@ import Footer from "../../Components/Footer.vue";
               </p>
               <p class="font-prompt-bold">VIRTUELNA</p>
 
-              <div class="relative w-100">
+              <div class="relative w-full">
                 <span class="absolute -bottom-0">
                   <svg
                     class="icon icon-right-arrow rotate-90"
@@ -46,7 +46,7 @@ import Footer from "../../Components/Footer.vue";
             </h4>
 
             <Link
-              class="w-fit flex items-center justify-center border border-w-primary bg-w-primary text-white font-prompt-medium rounded-3xl px-8 py-3 hidden"
+              class="mt-16 w-fit flex items-center justify-center border bg-w-tertiary border-w-tertiary text-white font-prompt-medium rounded-lg px-8 py-3"
               href="/"
               >Postani prodavac</Link
             >
@@ -712,23 +712,119 @@ import Footer from "../../Components/Footer.vue";
       </div>
 
       <div class="grid grid-cols-3 gap-8">
-        <div>
+        <div class="relative">
+          <div class="flex items-center justify-between mb-4">
+            <a class="flex items-center" href="#">
+              <img class="mr-3" src="@/images/korisnik.jpg" alt="" />
+              <span class="font-prompt-regular">Johanna002</span></a
+            >
+
+            <div>
+              <img class="w-5" src="@/images/icons/dots.svg" alt="" />
+            </div>
+          </div>
+
           <img
             src="https://cdn.shopify.com/s/files/1/1368/3463/files/WSG_2306_Summer-Campaign---38_20_281_29_450x_crop_center@2x.progressive.jpeg?v=1684514918"
             alt=""
           />
-        </div>
 
-        <div>
+          <div
+            class="flex items-center justify-between absolute bottom-8 left-6 right-6 z-10"
+          >
+            <div class="flex items-center">
+              <img class="w-5 mr-3 filter-white" src="@/images/icons/like.svg" alt="" />
+
+              <span class="text-sm font-prompt-medium text-white">355 likes</span>
+            </div>
+
+            <div class="flex items-center">
+              <img class="w-5 mr-3 filter-white" src="@/images/icons/send.svg" alt="" />
+              <img class="w-5 filter-white" src="@/images/icons/save.svg" alt="" />
+            </div>
+          </div>
+
           <img
-            src="https://cdn.shopify.com/s/files/1/1368/3463/files/Shortstache_E2_84_A2_Cuts_NewYork_FullRes-540_450x_crop_center@2x.progressive.jpg?v=1680481504"
+            class="absolute bottom-0 left-0 right-0 w-full"
+            src="@/images/icons/mask-bottom.svg"
             alt=""
           />
         </div>
 
-        <div>
+        <div class="relative">
+          <div class="flex items-center justify-between mb-4">
+            <a class="flex items-center" href="#">
+              <img class="mr-3" src="@/images/korisnik.jpg" alt="" />
+              <span class="font-prompt-regular">Johanna002</span></a
+            >
+
+            <div>
+              <img class="w-5" src="@/images/icons/dots.svg" alt="" />
+            </div>
+          </div>
+
+          <img
+            src="https://cdn.shopify.com/s/files/1/1368/3463/files/Shortstache_E2_84_A2_Cuts_NewYork_FullRes-540_450x_crop_center@2x.progressive.jpg?v=1680481504"
+            alt=""
+          />
+
+          <div
+            class="flex items-center justify-between absolute bottom-8 left-6 right-6 z-10"
+          >
+            <div class="flex items-center">
+              <img class="w-5 mr-3 filter-white" src="@/images/icons/like.svg" alt="" />
+
+              <span class="text-sm font-prompt-medium text-white">355 likes</span>
+            </div>
+
+            <div class="flex items-center">
+              <img class="w-5 mr-3 filter-white" src="@/images/icons/send.svg" alt="" />
+              <img class="w-5 filter-white" src="@/images/icons/save.svg" alt="" />
+            </div>
+          </div>
+
+          <img
+            class="absolute bottom-0 left-0 right-0 w-full"
+            src="@/images/icons/mask-bottom.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="relative">
+          <div class="flex items-center justify-between mb-4">
+            <a class="flex items-center" href="#">
+              <img class="mr-3" src="@/images/korisnik.jpg" alt="" />
+              <span class="font-prompt-regular">Johanna002</span></a
+            >
+
+            <div>
+              <img class="w-5" src="@/images/icons/dots.svg" alt="" />
+            </div>
+          </div>
+
           <img
             src="https://cdn.shopify.com/s/files/1/1368/3463/files/Aeroflight1204_20copy_450x_crop_center@2x.progressive.jpg?v=1680480787"
+            alt=""
+          />
+
+          <div
+            class="flex items-center justify-between absolute bottom-8 left-6 right-6 z-10"
+          >
+            <div class="flex items-center">
+              <img class="w-5 mr-3 filter-white" src="@/images/icons/like.svg" alt="" />
+
+              <span class="text-sm font-prompt-medium text-white">355 likes</span>
+            </div>
+
+            <div class="flex items-center">
+              <img class="w-5 mr-3 filter-white" src="@/images/icons/send.svg" alt="" />
+              <img class="w-5 filter-white" src="@/images/icons/save.svg" alt="" />
+            </div>
+          </div>
+
+          <img
+            class="absolute bottom-0 left-0 right-0 w-full"
+            src="@/images/icons/mask-bottom.svg"
             alt=""
           />
         </div>
@@ -817,7 +913,7 @@ import Footer from "../../Components/Footer.vue";
             >
               <img
                 class="w-5"
-                src="http://[::1]:5173/resources/images/icons/search-primary.svg"
+                src="http://[::1]:5173/resources/images/icons/send.svg"
                 alt=""
               /></button
             ><input
@@ -848,5 +944,9 @@ import Footer from "../../Components/Footer.vue";
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.filter-white {
+  filter: invert(100);
 }
 </style>
